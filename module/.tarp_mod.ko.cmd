@@ -1,0 +1,1 @@
+cmd_/home/daveti/Downloads/tarp/module/tarp_mod.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.2.0-55-generic/scripts/module-common.lds --build-id  -o /home/daveti/Downloads/tarp/module/tarp_mod.ko /home/daveti/Downloads/tarp/module/tarp_mod.o /home/daveti/Downloads/tarp/module/tarp_mod.mod.o

@@ -1,0 +1,24 @@
+# This is a note from daveti
+# on how to make tarp work on Ubuntu 12.04 with kernel 3.2.0.55
+# Oct 15, 2013
+# root@davejingtian.org
+# http://davejingtian.org
+
+1. Libs
+apt-get install libssl-dev
+apt-get install iproute
+apt-get install iproute-dev
+
+2. Module
+"/proc/sys/net/ipv4/tarp" -> "/proc/tarp"
+
+3. lta
+-lcrypto
+include <openssl.bio.h>
+
+4. src
+-lcrypto
+Rename the header "libnetlink.h" with things from 'man netlink'
+
+5. libnetlink
+remove the whole thing
