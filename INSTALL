@@ -1,0 +1,150 @@
+INSTALLATION
+=======================
+
+
+1. REQUIRED LIBRARIES
+=======================
+
+In order for TARP to work the following libraries are needed:
+
+-- OpenSSL v 0.9.7f or higher
+-- libpcap v 2.4 or higher
+-- libnet  v 1.1.2.1  
+-- libnetlink v 020116
+
+OpenSSL and libpcap are normally installed by default
+with many linux distributions.
+
+libnet can be downloaded from fedora extra's project website.
+http://fedoraproject.org/extras/4/i386/repodata/repoview/libnet-devel-0-1.1.2.1-6.fc4.html
+
+libnetlink is part of the iproute2 package. To install libnetlink you can either install iproute2 or install libnetlink by itself.
+
+You can download iproute2 from:
+ 	http://developer.osdl.org/dev/iproute2/download/
+
+or download libnetlink library from:
+http://rpm.pbone.net/index.php3/stat/4/idpl/684220/com/libnetlink-devel-2.4.7.ss020116-10@2.4.20_6.i386.rpm.html
+
+Copy the libnetlink.a file to /usr/lib/ and libnetlink.h to /usr/include
+
+2. TARP KERNEL MODULE INSTALLATION
+==================================
+
+In order to compile the tarp_mod loadable kernel module (LKM), you will 
+need to have your kernel souce files. For information on how to install 
+and compile your linux kernel, please consult your linux distribution user guide.
+
+1. Extract source code files:
+
+	tar xvf tarp.tar
+
+2. Compile Tarp module:
+
+	'cd' to module directory and type 'make'
+
+3. Install the tarp_mod module:
+   
+	type 'make install'
+   
+   This will copy the tarp_mod to the approperiate modules directory
+   on your system.
+   
+4. Regenerate modules.dep and map files:
+
+   type 'depmod -a'
+
+5. Load the tarp_mod module:
+
+   type 'modprobe tarp_mod'
+
+Note: You can also load the kernel by typing 'insmod tarp_mod.ko' 
+   To unload the kernel type 'rmmod tarp_mod'
+   
+Note: To have tarp startup at boot time. Add 'modprobe tarp_mod' to your startup scripts.
+
+
+3. TARP DAEMON INSTALLATION
+================================
+
+1. Compile tarpd daemon
+   
+   'cd' to src directory and type 'make'
+
+2. Install the tarp daemon:
+
+   type 'make install'
+
+   This will copy the tarpd to the approperiate directory
+   on your system.
+   
+	tarpd is copied to /usr/bin
+	tarp_conf, known_hosts, ex_pub_key, ex_ticket are all copied
+	into /etc/tarp
+
+   tarp_conf is the main configuration file for TARP. 
+
+4. TARP CONFIGURATION
+===============================
+
+In order to use TARP in your network, you will need to generate
+a network private/public key pair. The private key is used by the
+server (lta) to generate tarp tickets. While the public key is used
+by hosts to check ticket validity.
+
+1. Compile tarp configuration tools: 
+
+   'cd' to lta directory and type 'make'
+
+
+2. Generate private/public key pair files
+
+   type 'lta_genkeys FILE_NAME 1024 1'
+   where FILE_NAME is a prefix for the key files
+
+3. Use the private key file to generate tickets for machines 
+   that will run tarp
+
+   type 'lta MAC IP PRIVATE_KEY_FILE > TICKET_FILE'
+
+8. Copy the ticket files to each machine that will be running tarp.
+   The ticket file should be copied to the directory indicated in your tarp configuration file (tarp_conf).
+
+
+KNOWN HOSTS CONFIGURATION
+================================
+
+Known hosts are hosts on your network that are not running TARP.
+For example this could be a network printer that is not running TARP.
+By adding an IP address to your knwon hosts file a TARP host will accept
+classic unsigned ARP packets for that IP address.
+
+1. Edit your known hosts configuration file
+   Each line in the known_hosts file represents a range of IP addresses
+   For example:
+      192.168.0.1 192.168.0.10
+
+   This will include 10 IP addresses in your known hosts.
+
+RUNNING TARPD
+==================================
+
+To run tarp:
+	type '/usr/bin/tarpd'
+	
+	by default tarpd will user /etc/tarp/tarp_conf as the default configuration file.
+
+To stop tarpd:
+
+	ps -e | grep tarp
+	kill 12345
+
+	where 1234 is the process id of tarpd
+
+
+-------------------------------------------------
+
+Please report any installation issues to lootah@cse.psu.edu
+
+Thanks.
+

@@ -1,0 +1,11 @@
+#This the default tarp configuration file
+
+#RSA Public Key file
+public_key /etc/tarp/ex_pub_key
+
+#ticket file
+ticket /etc/tarp/ex_ticket
+
+#known hosts file
+known_hosts /etc/tarp/known_hosts
+
