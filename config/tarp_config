@@ -6,9 +6,6 @@ public_key /etc/tarp/ex_pub_key
 
 #ticket file
 # daveti: should be the one for ourselves
-public_key /etc/tarp/ex_pub_key
-
-#ticket file
 ticket /etc/tarp/ex_ticket
 
 #known hosts file
