@@ -27,8 +27,8 @@
    Note: This version of TARP is NOT suited for production environments.
    This version was developed for research purposes only.
 */
-
-//#define DEBUG
+//daveti: enabled debug
+#define DEBUG
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -84,6 +84,9 @@ int request_total=0;
 #define ARPOP_TARP_TICKET 5
 
 #define MAXVLEN 200
+
+//daveti: set the interface we are using
+#define TARP_IF_NAME	"eth1"
 
 /* ************************************************************************* 
  *                          process_new_ticket
@@ -382,7 +385,9 @@ void process_packet(u_char *args, const struct pcap_pkthdr *header, const u_char
       break;
     
     case ARPOP_REPLY:
-      process_arp_reply(arp,myIP,"eth0");
+//daveti
+      //process_arp_reply(arp,myIP,"eth0");
+      process_arp_reply(arp, myIP, TARP_IF_NAME);
       break;
 
     case ARPOP_TARP_TICKET:
@@ -474,9 +479,14 @@ int main(int argc, char *argv[])
     exit(-1);
   }
 
-  dev = "eth0";
+//daveti
+  //dev = "eth0";
+  dev = TARP_IF_NAME;
 
   load_configuration(config_file, kh_file, pk_file, ticket_file);
+
+//daveti
+printf("load_configuration is done\n");
  
   #ifndef DEBUG 
      daemonize();
@@ -495,6 +505,9 @@ int main(int argc, char *argv[])
 
   DEBUG_MSG("INFO: Interface IP %X\n",myIP);
 
+//daveti
+printf("Interface [%s] IP [%X]\n", dev, myIP);
+
   disable_kernel_arp();
 
   r = init_crypto(pk_file);
@@ -508,6 +521,9 @@ int main(int argc, char *argv[])
   start_capture(descr, (pcap_handler) process_packet);
 
   pcap_perror(descr,"Capture termiated");
+
+//daveti
+printf("tarpd exits with 0\n");
 
   return(0);
 }

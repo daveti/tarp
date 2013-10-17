@@ -6,7 +6,8 @@ INSTALL = install
   
 # Compiler options
 #CCOPTS = -O3 -mv8
-#CCOPTS = -g -Wall
+# daveti: enable debugging
+CCOPTS = -ggdb -Wall
 
 LIBS = -lpcap -lnet -lssl -lcrypto -lnetlink
 

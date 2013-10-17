@@ -1,9 +1,11 @@
 #This the default tarp configuration file
 
 #RSA Public Key file
+# daveti: should be the one for the remote
 public_key /etc/tarp/ex_pub_key
 
 #ticket file
+# daveti: should be the one for ourselves
 ticket /etc/tarp/ex_ticket
 
 #known hosts file
