@@ -32,9 +32,13 @@
 #include <fcntl.h>
 #include <tarp_error.h>
 
+<<<<<<< HEAD
 //daveti: update the module path
 //#define MODULE_PATH "/proc/sys/net/ipv4/tarp"
 #define MODULE_PATH "/proc/tarp"
+=======
+#define MODULE_PATH "/proc/sys/net/ipv4/tarp"
+>>>>>>> 2070764cfe7f940384d5dc874ae05ca320378614
 
 void enable_kernel_arp(void);
 void disable_kernel_arp(void);
