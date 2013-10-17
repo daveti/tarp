@@ -27,13 +27,9 @@
    Note: This version of TARP is NOT suited for production environments.
    This version was developed for research purposes only.
 */
-<<<<<<< HEAD
 //daveti: enabled debug
 #define DEBUG
-=======
-
 //#define DEBUG
->>>>>>> 2070764cfe7f940384d5dc874ae05ca320378614
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -90,12 +86,9 @@ int request_total=0;
 
 #define MAXVLEN 200
 
-<<<<<<< HEAD
 //daveti: set the interface we are using
 #define TARP_IF_NAME	"eth1"
 
-=======
->>>>>>> 2070764cfe7f940384d5dc874ae05ca320378614
 /* ************************************************************************* 
  *                          process_new_ticket
  *************************************************************************** */
@@ -393,13 +386,9 @@ void process_packet(u_char *args, const struct pcap_pkthdr *header, const u_char
       break;
     
     case ARPOP_REPLY:
-<<<<<<< HEAD
 //daveti
       //process_arp_reply(arp,myIP,"eth0");
       process_arp_reply(arp, myIP, TARP_IF_NAME);
-=======
-      process_arp_reply(arp,myIP,"eth0");
->>>>>>> 2070764cfe7f940384d5dc874ae05ca320378614
       break;
 
     case ARPOP_TARP_TICKET:
@@ -491,7 +480,6 @@ int main(int argc, char *argv[])
     exit(-1);
   }
 
-<<<<<<< HEAD
 //daveti
   //dev = "eth0";
   dev = TARP_IF_NAME;
@@ -500,11 +488,6 @@ int main(int argc, char *argv[])
 
 //daveti
 printf("load_configuration is done\n");
-=======
-  dev = "eth0";
-
-  load_configuration(config_file, kh_file, pk_file, ticket_file);
->>>>>>> 2070764cfe7f940384d5dc874ae05ca320378614
  
   #ifndef DEBUG 
      daemonize();
@@ -523,12 +506,9 @@ printf("load_configuration is done\n");
 
   DEBUG_MSG("INFO: Interface IP %X\n",myIP);
 
-<<<<<<< HEAD
 //daveti
 printf("Interface [%s] IP [%X]\n", dev, myIP);
 
-=======
->>>>>>> 2070764cfe7f940384d5dc874ae05ca320378614
   disable_kernel_arp();
 
   r = init_crypto(pk_file);
@@ -543,12 +523,9 @@ printf("Interface [%s] IP [%X]\n", dev, myIP);
 
   pcap_perror(descr,"Capture termiated");
 
-<<<<<<< HEAD
 //daveti
 printf("tarpd exits with 0\n");
 
-=======
->>>>>>> 2070764cfe7f940384d5dc874ae05ca320378614
   return(0);
 }
 
