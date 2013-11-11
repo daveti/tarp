@@ -170,6 +170,11 @@ int main(int argc, char *argv[]) {
   sign = malloc(RSA_size(r));
   //printf("Signing data\n");
 
+//daveti: time measurement for the ticket generation
+struct timeval tpstart,tpend;
+float timeuse = 0;
+gettimeofday(&tpstart,NULL);
+
   smac = (unsigned char *)str2mac(argv[1]);
   sip = str2ip(argv[2]);
   magic = htonl(magic);
@@ -197,6 +202,12 @@ int main(int argc, char *argv[]) {
     printf("Error signing the data\n");
     exit(0);
   }
+
+gettimeofday(&tpend,NULL);
+timeuse=1000000*(tpend.tv_sec-tpstart.tv_sec)+tpend.tv_usec-tpstart.tv_usec;
+timeuse/=1000000;
+printf("Total time on crypto_genkeypair() is [%f] ms\n", timeuse);
+
   raw_to_b64((char *)data,TICKET_LENGTH,&data_b64);
   raw_to_b64((char *)sign,signlen,&sign_b64);
   printf("%s\n%s\n",data_b64,sign_b64);

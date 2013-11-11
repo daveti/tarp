@@ -36,6 +36,9 @@
 #include <stdio.h>
 #include <string.h>
 
+//daveti: timing for key gen
+#include <sys/time.h>
+
 //#define RSA_KEY_LEN 1024
 #define RSA_EXPONENT 3
 #define RSA_CALLBACK NULL
@@ -71,7 +74,17 @@ int main(int argc,char *argv[]) {
 
   key_len = atoi(argv[2]);
 
+//daveti: add time measurement for this function call
+struct timeval tpstart,tpend;
+float timeuse = 0;
+gettimeofday(&tpstart,NULL);
+
   r = RSA_generate_key(key_len, RSA_EXPONENT, RSA_CALLBACK, RSA_CB_ARGS);
+
+gettimeofday(&tpend,NULL);
+timeuse=1000000*(tpend.tv_sec-tpstart.tv_sec)+tpend.tv_usec-tpstart.tv_usec;
+timeuse/=1000000;
+printf("Total time on crypto_genkeypair() is [%f] ms\n", timeuse);
   
   if ((priv_output_file = fopen(priv_file_name, "w")) == NULL)
            fprintf(stderr, "Cannot open %s\n", argv[1]);

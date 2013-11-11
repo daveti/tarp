@@ -23,3 +23,6 @@ Update the module path to be "/proc/tarp"
 
 5. libnetlink
 remove the whole thing
+
+6. time measurement for tarp_genkeys
+Added scripts to process the output

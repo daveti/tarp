@@ -1,0 +1,200 @@
+perf_1_priv.txt perf_1_pub.txt
+Total time on crypto_genkeypair() is [0.016596] ms
+perf_2_priv.txt perf_2_pub.txt
+Total time on crypto_genkeypair() is [0.013783] ms
+perf_3_priv.txt perf_3_pub.txt
+Total time on crypto_genkeypair() is [0.029177] ms
+perf_4_priv.txt perf_4_pub.txt
+Total time on crypto_genkeypair() is [0.043734] ms
+perf_5_priv.txt perf_5_pub.txt
+Total time on crypto_genkeypair() is [0.043353] ms
+perf_6_priv.txt perf_6_pub.txt
+Total time on crypto_genkeypair() is [0.016894] ms
+perf_7_priv.txt perf_7_pub.txt
+Total time on crypto_genkeypair() is [0.028866] ms
+perf_8_priv.txt perf_8_pub.txt
+Total time on crypto_genkeypair() is [0.030963] ms
+perf_9_priv.txt perf_9_pub.txt
+Total time on crypto_genkeypair() is [0.058172] ms
+perf_10_priv.txt perf_10_pub.txt
+Total time on crypto_genkeypair() is [0.033656] ms
+perf_11_priv.txt perf_11_pub.txt
+Total time on crypto_genkeypair() is [0.039770] ms
+perf_12_priv.txt perf_12_pub.txt
+Total time on crypto_genkeypair() is [0.016580] ms
+perf_13_priv.txt perf_13_pub.txt
+Total time on crypto_genkeypair() is [0.018881] ms
+perf_14_priv.txt perf_14_pub.txt
+Total time on crypto_genkeypair() is [0.008944] ms
+perf_15_priv.txt perf_15_pub.txt
+Total time on crypto_genkeypair() is [0.015150] ms
+perf_16_priv.txt perf_16_pub.txt
+Total time on crypto_genkeypair() is [0.011806] ms
+perf_17_priv.txt perf_17_pub.txt
+Total time on crypto_genkeypair() is [0.025480] ms
+perf_18_priv.txt perf_18_pub.txt
+Total time on crypto_genkeypair() is [0.033248] ms
+perf_19_priv.txt perf_19_pub.txt
+Total time on crypto_genkeypair() is [0.054689] ms
+perf_20_priv.txt perf_20_pub.txt
+Total time on crypto_genkeypair() is [0.038822] ms
+perf_21_priv.txt perf_21_pub.txt
+Total time on crypto_genkeypair() is [0.026743] ms
+perf_22_priv.txt perf_22_pub.txt
+Total time on crypto_genkeypair() is [0.050162] ms
+perf_23_priv.txt perf_23_pub.txt
+Total time on crypto_genkeypair() is [0.012883] ms
+perf_24_priv.txt perf_24_pub.txt
+Total time on crypto_genkeypair() is [0.005170] ms
+perf_25_priv.txt perf_25_pub.txt
+Total time on crypto_genkeypair() is [0.012170] ms
+perf_26_priv.txt perf_26_pub.txt
+Total time on crypto_genkeypair() is [0.038261] ms
+perf_27_priv.txt perf_27_pub.txt
+Total time on crypto_genkeypair() is [0.028116] ms
+perf_28_priv.txt perf_28_pub.txt
+Total time on crypto_genkeypair() is [0.017656] ms
+perf_29_priv.txt perf_29_pub.txt
+Total time on crypto_genkeypair() is [0.022347] ms
+perf_30_priv.txt perf_30_pub.txt
+Total time on crypto_genkeypair() is [0.040663] ms
+perf_31_priv.txt perf_31_pub.txt
+Total time on crypto_genkeypair() is [0.039251] ms
+perf_32_priv.txt perf_32_pub.txt
+Total time on crypto_genkeypair() is [0.023731] ms
+perf_33_priv.txt perf_33_pub.txt
+Total time on crypto_genkeypair() is [0.035496] ms
+perf_34_priv.txt perf_34_pub.txt
+Total time on crypto_genkeypair() is [0.030634] ms
+perf_35_priv.txt perf_35_pub.txt
+Total time on crypto_genkeypair() is [0.043613] ms
+perf_36_priv.txt perf_36_pub.txt
+Total time on crypto_genkeypair() is [0.039296] ms
+perf_37_priv.txt perf_37_pub.txt
+Total time on crypto_genkeypair() is [0.014789] ms
+perf_38_priv.txt perf_38_pub.txt
+Total time on crypto_genkeypair() is [0.022098] ms
+perf_39_priv.txt perf_39_pub.txt
+Total time on crypto_genkeypair() is [0.030339] ms
+perf_40_priv.txt perf_40_pub.txt
+Total time on crypto_genkeypair() is [0.024644] ms
+perf_41_priv.txt perf_41_pub.txt
+Total time on crypto_genkeypair() is [0.025617] ms
+perf_42_priv.txt perf_42_pub.txt
+Total time on crypto_genkeypair() is [0.039868] ms
+perf_43_priv.txt perf_43_pub.txt
+Total time on crypto_genkeypair() is [0.029096] ms
+perf_44_priv.txt perf_44_pub.txt
+Total time on crypto_genkeypair() is [0.035010] ms
+perf_45_priv.txt perf_45_pub.txt
+Total time on crypto_genkeypair() is [0.020521] ms
+perf_46_priv.txt perf_46_pub.txt
+Total time on crypto_genkeypair() is [0.037022] ms
+perf_47_priv.txt perf_47_pub.txt
+Total time on crypto_genkeypair() is [0.045788] ms
+perf_48_priv.txt perf_48_pub.txt
+Total time on crypto_genkeypair() is [0.009917] ms
+perf_49_priv.txt perf_49_pub.txt
+Total time on crypto_genkeypair() is [0.069155] ms
+perf_50_priv.txt perf_50_pub.txt
+Total time on crypto_genkeypair() is [0.036715] ms
+perf_51_priv.txt perf_51_pub.txt
+Total time on crypto_genkeypair() is [0.015227] ms
+perf_52_priv.txt perf_52_pub.txt
+Total time on crypto_genkeypair() is [0.058804] ms
+perf_53_priv.txt perf_53_pub.txt
+Total time on crypto_genkeypair() is [0.020662] ms
+perf_54_priv.txt perf_54_pub.txt
+Total time on crypto_genkeypair() is [0.050503] ms
+perf_55_priv.txt perf_55_pub.txt
+Total time on crypto_genkeypair() is [0.028378] ms
+perf_56_priv.txt perf_56_pub.txt
+Total time on crypto_genkeypair() is [0.012252] ms
+perf_57_priv.txt perf_57_pub.txt
+Total time on crypto_genkeypair() is [0.012002] ms
+perf_58_priv.txt perf_58_pub.txt
+Total time on crypto_genkeypair() is [0.022604] ms
+perf_59_priv.txt perf_59_pub.txt
+Total time on crypto_genkeypair() is [0.035672] ms
+perf_60_priv.txt perf_60_pub.txt
+Total time on crypto_genkeypair() is [0.032365] ms
+perf_61_priv.txt perf_61_pub.txt
+Total time on crypto_genkeypair() is [0.034950] ms
+perf_62_priv.txt perf_62_pub.txt
+Total time on crypto_genkeypair() is [0.037988] ms
+perf_63_priv.txt perf_63_pub.txt
+Total time on crypto_genkeypair() is [0.010034] ms
+perf_64_priv.txt perf_64_pub.txt
+Total time on crypto_genkeypair() is [0.041890] ms
+perf_65_priv.txt perf_65_pub.txt
+Total time on crypto_genkeypair() is [0.032353] ms
+perf_66_priv.txt perf_66_pub.txt
+Total time on crypto_genkeypair() is [0.024532] ms
+perf_67_priv.txt perf_67_pub.txt
+Total time on crypto_genkeypair() is [0.024302] ms
+perf_68_priv.txt perf_68_pub.txt
+Total time on crypto_genkeypair() is [0.045197] ms
+perf_69_priv.txt perf_69_pub.txt
+Total time on crypto_genkeypair() is [0.027789] ms
+perf_70_priv.txt perf_70_pub.txt
+Total time on crypto_genkeypair() is [0.014782] ms
+perf_71_priv.txt perf_71_pub.txt
+Total time on crypto_genkeypair() is [0.029364] ms
+perf_72_priv.txt perf_72_pub.txt
+Total time on crypto_genkeypair() is [0.044267] ms
+perf_73_priv.txt perf_73_pub.txt
+Total time on crypto_genkeypair() is [0.037439] ms
+perf_74_priv.txt perf_74_pub.txt
+Total time on crypto_genkeypair() is [0.041126] ms
+perf_75_priv.txt perf_75_pub.txt
+Total time on crypto_genkeypair() is [0.017913] ms
+perf_76_priv.txt perf_76_pub.txt
+Total time on crypto_genkeypair() is [0.018980] ms
+perf_77_priv.txt perf_77_pub.txt
+Total time on crypto_genkeypair() is [0.025146] ms
+perf_78_priv.txt perf_78_pub.txt
+Total time on crypto_genkeypair() is [0.022695] ms
+perf_79_priv.txt perf_79_pub.txt
+Total time on crypto_genkeypair() is [0.046788] ms
+perf_80_priv.txt perf_80_pub.txt
+Total time on crypto_genkeypair() is [0.064333] ms
+perf_81_priv.txt perf_81_pub.txt
+Total time on crypto_genkeypair() is [0.037296] ms
+perf_82_priv.txt perf_82_pub.txt
+Total time on crypto_genkeypair() is [0.069476] ms
+perf_83_priv.txt perf_83_pub.txt
+Total time on crypto_genkeypair() is [0.033993] ms
+perf_84_priv.txt perf_84_pub.txt
+Total time on crypto_genkeypair() is [0.021812] ms
+perf_85_priv.txt perf_85_pub.txt
+Total time on crypto_genkeypair() is [0.024737] ms
+perf_86_priv.txt perf_86_pub.txt
+Total time on crypto_genkeypair() is [0.032413] ms
+perf_87_priv.txt perf_87_pub.txt
+Total time on crypto_genkeypair() is [0.034536] ms
+perf_88_priv.txt perf_88_pub.txt
+Total time on crypto_genkeypair() is [0.025768] ms
+perf_89_priv.txt perf_89_pub.txt
+Total time on crypto_genkeypair() is [0.028751] ms
+perf_90_priv.txt perf_90_pub.txt
+Total time on crypto_genkeypair() is [0.026151] ms
+perf_91_priv.txt perf_91_pub.txt
+Total time on crypto_genkeypair() is [0.027936] ms
+perf_92_priv.txt perf_92_pub.txt
+Total time on crypto_genkeypair() is [0.022394] ms
+perf_93_priv.txt perf_93_pub.txt
+Total time on crypto_genkeypair() is [0.048299] ms
+perf_94_priv.txt perf_94_pub.txt
+Total time on crypto_genkeypair() is [0.016618] ms
+perf_95_priv.txt perf_95_pub.txt
+Total time on crypto_genkeypair() is [0.026949] ms
+perf_96_priv.txt perf_96_pub.txt
+Total time on crypto_genkeypair() is [0.052491] ms
+perf_97_priv.txt perf_97_pub.txt
+Total time on crypto_genkeypair() is [0.033916] ms
+perf_98_priv.txt perf_98_pub.txt
+Total time on crypto_genkeypair() is [0.036737] ms
+perf_99_priv.txt perf_99_pub.txt
+Total time on crypto_genkeypair() is [0.057902] ms
+perf_100_priv.txt perf_100_pub.txt
+Total time on crypto_genkeypair() is [0.026603] ms
