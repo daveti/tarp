@@ -287,6 +287,9 @@ int ipneigh_modify(int cmd, int flags, int nud, char *ll_addr, u_int32_t ip, cha
    
 	if (rtnl_talk(&rth, &req.n, 0, 0, NULL, NULL, NULL) < 0)
 	  	printf("rtnl_talk()");
+
+   /* daveti: close the netlink opened by the libnetlink */
+   rtnl_close(&rth);
  
    return 0;
 }
